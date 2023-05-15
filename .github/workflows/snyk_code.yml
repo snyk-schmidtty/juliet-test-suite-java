@@ -27,7 +27,7 @@ jobs:
     # Run Snyk Code
     - name: Run Snyk Code
       run: |
-         snyk code test --sarif  > results.sarif
+         snyk code test --debug --sarif  > results.sarif
          snyk-to-html -i results.sarif -o code_results.html
       continue-on-error: true
     - name: Upload SARIF file
