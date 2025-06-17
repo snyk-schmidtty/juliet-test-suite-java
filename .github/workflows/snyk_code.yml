@@ -36,7 +36,7 @@ jobs:
         # Path to SARIF file relative to the root of the repository
         sarif_file: results.sarif
     - name: Archive Snyk Code Coverage Results
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
           name: Archive Snyk Code Coverage Results
           path: | 
